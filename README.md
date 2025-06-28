@@ -1,113 +1,71 @@
-🚀 Features
-🔐 User Authentication (Login/Register)
+# 🍽️ Catering Reservation & Ordering System
 
-📋 Menu Browsing (Product List)
+> A modern web application for managing catering reservations, food menus, and online ordering — built with **React** + **Firebase**.
 
-🛒 Cart & Order Placement
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
+![Firebase](https://img.shields.io/badge/Backend-Firebase-orange?logo=firebase)
 
-📦 View My Orders
+---
 
-⚙️ Admin Dashboard
+## ✨ Features
 
-➕ Add New Products (Admin Only)
+✅ Seamless **User Registration & Login**  
+🍛 Beautifully organized **Menu Listings**  
+🛒 Interactive **Cart** and **Order Placement**  
+📦 Track all your **My Orders**  
+👤 Manage your **User Profile**  
+🛠️ **Admin Dashboard** to add/edit products  
+☁️ Built on **Firebase Firestore & Authentication**  
+💡 Simple & clean UI (Responsive on all devices!)
 
-👤 User Profile View
+---
 
-☁️ Firebase Firestore & Authentication Integration
 
-🌐 React Router for navigation
+## 🔧 Tech Stack
 
-🎨 Responsive UI with custom CSS or Tailwind CSS
+| 🧠 Frontend       | ⚙️ Backend         | 🧰 Libraries / Tools         |
+|------------------|--------------------|------------------------------|
+| React (JSX)      | Firebase Firestore | React Router DOM             |
+| HTML + CSS       | Firebase Auth      | PostCSS / Tailwind (optional)|
+| JavaScript       |                    | Vite / CRA                   |
 
-🛠️ Tech Stack
-Frontend	Backend / DB	Tools & Libraries
-React	Firebase Auth	React Router DOM
-JSX	Firebase Firestore	Firebase SDK
-CSS / Tailwind		Vite or Create React App
-React Hooks		PostCSS (if using Tailwind)
+---
 
-📁 Folder Structure
-pgsql
-Copy
-Edit
-catering-app/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Auth/
-│   │   ├── Products/
-│   │   ├── Orders/
-│   │   └── Profile/
-│   ├── context/
-│   ├── firebase/
-│   ├── pages/
-│   ├── utils/
-│   ├── App.jsx
-│   ├── App.css
-│   └── index.js
-├── .gitignore
-├── package.json
-└── README.md
-🔧 Setup Instructions
-Clone the Repository
+## 📁 Folder Structure
 
-bash
-Copy
-Edit
-git clone (https://github.com/Debarghya-Das/Catering_Management_System.git)
-cd catering-app
-Install Dependencies
+📦 catering-app/
+├── 📂 public/                     # Static files
+│   └── 📄 index.html              # Main HTML file
+├── 📂 src/                        # All source code
+│   ├── 📂 components/             # Reusable UI components
+│   │   ├── 📂 Auth/               # Login & Register
+│   │   │   ├── 🧾 Login.jsx
+│   │   │   └── 🧾 Register.jsx
+│   │   ├── 📂 Products/           # Product-related views
+│   │   │   ├── 🧾 ProductList.jsx
+│   │   │   └── 🧾 ProductForm.jsx
+│   │   ├── 📂 Orders/             # Cart and Orders
+│   │   │   ├── 🧾 Cart.jsx
+│   │   │   ├── 🧾 MyOrders.jsx
+│   │   │   └── 🧾 PlaceOrder.jsx
+│   │   └── 📂 Profile/            # User profile page
+│   │       └── 🧾 UserProfile.jsx
+│   ├── 📂 pages/                  # Main screens
+│   │   ├── 🏠 Home.jsx
+│   │   └── 🛠️ AdminDashboard.jsx
+│   ├── 📂 context/                # Global state (e.g. Auth)
+│   │   └── 🧠 AuthContext.js
+│   ├── 📂 firebase/               # Firebase config
+│   │   └── 🔥 firebaseConfig.js
+│   ├── 📂 utils/                  # Helpers / loggers
+│   │   └── 🛠️ logger.js
+│   ├── 🎯 App.jsx                 # App entry with routes
+│   ├── 🎨 App.css                 # Global styles
+│   └── 🚀 index.js                # ReactDOM render entry
+├── 📄 .gitignore
+├── 📄 package.json
+├── 📄 README.md
 
-bash
-Copy
-Edit
-npm install
-Firebase Configuration
-
-Create a Firebase project at firebase.google.com
-
-Enable Authentication (Email/Password) and Cloud Firestore
-
-Copy your Firebase config into src/firebase/firebaseConfig.js
-
-js
-Copy
-Edit
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  ...
-};
-Start the App
-
-bash
-Copy
-Edit
-npm start
-🔐 Firebase Firestore Rules (for testing only)
-js
-Copy
-Edit
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if true;
-    }
-  }
-}
-⚠️ Note: For production, update rules to restrict access properly.
-
-📦 Example Dummy Data (Firestore → products collection)
-json
-Copy
-Edit
-{
-  "name": "Paneer Butter Masala",
-  "price": 280
-}
 🧪 Future Improvements
 Role-based access control (admin vs user)
 
@@ -123,3 +81,4 @@ Email confirmations
 Debarghya Das
 B.Tech CSE Students
 GitHub: Debarghya-Das
+
