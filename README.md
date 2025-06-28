@@ -55,7 +55,7 @@ Clone the Repository
 bash
 Copy
 Edit
-git clone https://github.com/your-username/catering-app.git
+git clone (https://github.com/Debarghya-Das/Catering_Management_System.git)
 cd catering-app
 Install Dependencies
 
